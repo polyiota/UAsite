@@ -1,7 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'export',  // Required for static site generation
-  basePath: '/UAsite', // Replace with your repository name
+  output: 'export',  // Static site generation
   images: {
     unoptimized: true, // Required for static export
   },

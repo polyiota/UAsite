@@ -24,7 +24,7 @@ export function Navigation() {
         <div className="flex items-center justify-between">
           <Link href="/" className="flex items-center">
             <Image 
-              src="./logo-blue.png" 
+              src="/logo-blue.png"
               alt="Unqualified Advice Logo" 
               width={200}
               height={32}
