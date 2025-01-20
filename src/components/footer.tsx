@@ -44,7 +44,7 @@ export function Footer() {
           <div className="col-span-2">
             <Link href="/" className="inline-block mb-6">
               <Image 
-                src="/logo-blue.png" 
+                src="./logo-blue.png" 
                 alt="Unqualified Advice Logo" 
                 width={180}
                 height={29}

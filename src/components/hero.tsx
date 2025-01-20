@@ -17,7 +17,7 @@ export function Hero() {
           {/* Logo */}
           <div className="mb-12">
             <Image
-              src="/logo-blue.png"
+              src="./logo-blue.png"
               alt="Unqualified Advice Logo"
               width={400}
               height={65}
