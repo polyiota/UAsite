@@ -1,9 +1,19 @@
-'use client'
+import { Metadata } from 'next'
+import { Hero } from "@/components/hero"
+import { About } from "@/components/about"
+import { Newsletter } from "@/components/newsletter"
+
+export const metadata: Metadata = {
+  title: "Unqualified Advice Podcast",
+  description: "Join us for insightful conversations and engaging stories on Unqualified Advice",
+}
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <h1 className="text-4xl font-bold">Unqualified Advice Podcast</h1>
-    </main>
+    <>
+      <Hero />
+      <About />
+      <Newsletter />
+    </>
   )
 }

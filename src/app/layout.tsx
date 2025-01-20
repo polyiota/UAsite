@@ -1,13 +1,14 @@
-import './globals.css'
+import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
-import { Header } from '@/components/layout/Header'
-import { Footer } from '@/components/layout/Footer'
+import './globals.css'
+import { Navigation } from '@/components/navigation'
+import { Footer } from '@/components/footer'
 
 const inter = Inter({ subsets: ['latin'] })
 
-export const metadata = {
-  title: 'Unqualified Advice Podcast',
-  description: 'Listen to the Unqualified Advice Podcast',
+export const metadata: Metadata = {
+  title: 'Unqualified Advice',
+  description: 'A podcast for curious people.',
 }
 
 export default function RootLayout({
@@ -18,10 +19,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <Header />
-        <main className="min-h-screen">
-          {children}
-        </main>
+        <Navigation />
+        <main>{children}</main>
         <Footer />
       </body>
     </html>
