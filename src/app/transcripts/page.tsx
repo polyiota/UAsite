@@ -1,38 +1,17 @@
-'use client'
+import { type Metadata } from "next"
 
-import * as React from 'react'
-import { Input } from '@/components/ui/input'
-import { Button } from '@/components/ui/button'
-import { Select, SelectGroup, SelectTrigger, SelectValue } from '@/components/ui/select'
-import Image from 'next/image'
-import Link from 'next/link'
+export const metadata: Metadata = {
+  title: "Episode Transcripts | Unqualified Advice",
+  description: "Browse and search through all our episode transcripts",
+}
 
 export default function TranscriptsPage() {
-  const [searchQuery, setSearchQuery] = React.useState('')
-  const [sortBy, setSortBy] = React.useState('date')
-
   return (
-    <div className="container mx-auto px-4 py-12">
-      <h1 className="text-4xl font-bold mb-8 text-[#418aa0]">Latest Episodes</h1>
-      
-      <div className="flex gap-4 mb-8">
-        <Input
-          type="search"
-          placeholder="Search transcripts..."
-          value={searchQuery}
-          onChange={(e) => setSearchQuery(e.target.value)}
-          className="max-w-sm"
-        />
-        
-        <Select value={sortBy} onValueChange={setSortBy}>
-          <SelectTrigger className="w-[180px]">
-            <SelectValue placeholder="Sort by" />
-          </SelectTrigger>
-        </Select>
-      </div>
-
+    <div className="max-w-4xl mx-auto">
+      <h1 className="text-3xl font-bold mb-8">Episode Transcripts</h1>
       <div className="grid gap-6">
-        {/* Transcript list will go here */}
+        {/* Episode list will go here */}
+        <p className="text-gray-600">Coming soon: Browse through all our episode transcripts.</p>
       </div>
     </div>
   )
